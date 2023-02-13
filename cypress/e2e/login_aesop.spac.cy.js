@@ -6,5 +6,6 @@ describe('Acessar Pagina da Aesop e Preencher Login', () => {
   it('Cadastrar Usuário com o Preenchimento de todos os Campos.', () => {
     Login.acessarLoginAesop();
     Login.preencherLogin();
+    Login.validar_msg_logado_aesop();
   });
 });
