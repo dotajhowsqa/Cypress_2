@@ -1,4 +1,5 @@
 import { localizadores } from './locators';
+import { faker } from './massa_faker';
 
 require('./locators')
 
@@ -18,7 +19,7 @@ class Login {
     }
 
     preencherLogin() {
-        cy.get(localizadores.CADASTRAR_USUARIO.input_primeiro_nome).type('Fabiola')
+        cy.get(localizadores.CADASTRAR_USUARIO.input_primeiro_nome).type('name')
         cy.get(localizadores.CADASTRAR_USUARIO.input_sobrenome).type('Silva Costa')
         cy.get(localizadores.CADASTRAR_USUARIO.input_email).type('testesfabiola06@gmail.com')
         cy.get(localizadores.CADASTRAR_USUARIO.input_senha).type('Teste@2023')

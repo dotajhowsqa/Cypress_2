@@ -1,4 +1,4 @@
-const faker = require('faker');
+export const faker = require('faker');
 
 faker.locale = 'pt_BR';
 
