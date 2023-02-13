@@ -22,10 +22,4 @@ export const localizadores = {
         btn_criar_conta : '[type="submit"]',
         msg_ola_usuario : '.MuiTypography-root MuiTypography-subtitle2'
     },
-
-    LOGIN : {
-        usuario : '[data-test=e-mail]',
-        senha : '[teste-dados=senha]',
-        btn_entrar : '.btn'
-    }
 }
