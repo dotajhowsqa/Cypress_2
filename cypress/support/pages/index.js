@@ -1,5 +1,4 @@
 import { localizadores } from './locators';
-import { faker } from './massa_faker';
 
 require('./locators')
 
@@ -19,12 +18,12 @@ class Login {
     }
 
     preencherLogin() {
-        cy.get(localizadores.CADASTRAR_USUARIO.input_primeiro_nome).type('name')
+        cy.get(localizadores.CADASTRAR_USUARIO.input_primeiro_nome).type('Fabiola')
         cy.get(localizadores.CADASTRAR_USUARIO.input_sobrenome).type('Silva Costa')
-        cy.get(localizadores.CADASTRAR_USUARIO.input_email).type('testesfabiola06@gmail.com')
+        cy.get(localizadores.CADASTRAR_USUARIO.input_email).type('testesfabiola07@gmail.com')
         cy.get(localizadores.CADASTRAR_USUARIO.input_senha).type('Teste@2023')
         cy.get(localizadores.CADASTRAR_USUARIO.input_repitir_senha).type('Teste@2023')
-        cy.get(localizadores.CADASTRAR_USUARIO.input_cpf).type('374.988.930-96')
+        cy.get(localizadores.CADASTRAR_USUARIO.input_cpf).type('397.430.740-07')
         cy.get(localizadores.CADASTRAR_USUARIO.input_data_nascimento).type('25/04/1965')
         cy.get(localizadores.CADASTRAR_USUARIO.checkbox_genero).click()
         cy.get(localizadores.CADASTRAR_USUARIO.input_celular).type('11922222222')
